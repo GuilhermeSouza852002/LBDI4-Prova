@@ -41,7 +41,43 @@ O projeto será um jogo didático em formato de um quiz com aspectos de RPG onde
     
     Definition of Done: Desenvolver um mapa que o jogador possa explorar clicando nas áreas já definidas como ponto de exploração.
     
-3->
-4->
-5->
-6->
+3-> Título: Como jogador, como darei um ataque fraco em meus inimigos?
+    
+    Critério de aceitação:
+    
+    Given: Jogador
+    When: Deve responder as questões corretamente
+    Then: Para derrotar o inimigo 
+    
+    Definition of Done: O jogo possuirá um sistema de questões baseado em um combate de RPG onde o jogador pode optar por questões fáceis escolhendo dar um ataque fraco no inimigo
+
+
+4-> Título: Como jogador, como darei um ataque forte em meus inimigos?
+    
+    Critério de aceitação:
+    
+    Given: Jogador
+    When: Deve responder as questões corretamente
+    Then: Para derrotar o inimigo
+    
+    Definition of Done: O jogo possuirá um sistema de questões baseado em um combate de RPG onde o jogador pode optar por questões difíceis escolhendo dar um ataque forte no inimigo
+    
+5-> Título:
+    
+    Critério de aceitação:
+    
+    Given: 
+    When: 
+    Then: 
+    
+    Definition of Done:
+    
+6-> Título:
+    
+    Critério de aceitação:
+    
+    Given: 
+    When: 
+    Then: 
+    
+    Definition of Done:

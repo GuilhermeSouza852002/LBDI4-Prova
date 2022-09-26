@@ -62,13 +62,13 @@ O projeto será um jogo didático em formato de um quiz com aspectos de RPG onde
     
     Definition of Done: O jogo possuirá um sistema de questões baseado em um combate de RPG onde o jogador pode optar por questões difíceis escolhendo dar um ataque forte no inimigo
     
-5-> Título:
+5-> Título: Como jogador, como saberei que itens tenho no inventario
     
     Critério de aceitação:
     
-    Given: 
-    When: 
-    Then: 
+    Given: Jogador
+    When: Aessar o inventario
+    Then: Ver os itens que possui
     
     Definition of Done:
     

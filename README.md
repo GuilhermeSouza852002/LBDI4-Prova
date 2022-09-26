@@ -28,9 +28,6 @@ O projeto será um jogo didático em formato de um quiz com aspectos de RPG onde
     
     Definition of Done: Ao abrir o jogo será exibido o título do jogo e para iniciar o jogador deverá apertar "Enter"
 
-
-
-
 2-> Título: Como jogador, preciso saber onde estou dentro do jogo?
 
     Critério de aceitação:
@@ -72,12 +69,12 @@ O projeto será um jogo didático em formato de um quiz com aspectos de RPG onde
     
     Definition of Done:
     
-6-> Título:
+6-> Título: Como jogador, como posso me movimentar no jogo?
     
     Critério de aceitação:
     
-    Given: 
-    When: 
-    Then: 
+    Given: Jogador
+    When: Se movimentar
+    Then: Para se locomover
     
     Definition of Done:

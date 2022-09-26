@@ -5,11 +5,11 @@ Contexto do projeto:
 
 -------Problema--------------
 
-O desinteresse dos estudantes em aprender a disciplina de história.
+Atualmente o ensino de história vem se tornando cada vez menos atrativo para grande parte dos estudantes brasileiros por conta de sua metodologia de ensino exaustiva e pouco atrativa.
 
 -------Objetivo--------------
 
-Desenvolver um jogo que ensine e avalie o aluno na disciplina de história.
+Desenvolver um jogo que torna o ensino de história mais interativo e atrativo aos alunos, trazendo uma nova perspectiva e dinâmica de se aprender.
 
 -------Descrição--------------
 

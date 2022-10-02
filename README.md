@@ -77,7 +77,13 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
     Definition of Done: O jogo deve conseguir armazenar a puntuação dos jogadores
     
+10-> Título: Como sistema, como devo criar os inimigos que o jogador enfrentara?
   
+    Critério de aceitação: Deve ser criado inimigos que possuam um nome, hp, habilidades e a experiencia que dão ao serem derrotados
+    
+    Definition of Done: O jogo deve conseguir criar inimigos com nome, hp, habilidades e a experiencia que dão ao serem derrotados
+    
+    
   <h1 align="center">Diagrama MER</h1>
   <div align="center">
     <img src="https://github.com/GuilhermeSouza852002/LBDI4-Prova/blob/b8f568b8d8e50c00c5dc6c6e1dfd0872d9d10860/Diagramas/DiagramaRelacional.png" width="700px"/>

@@ -65,7 +65,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
     Definition of Done: O jogador deve conseguir escolher o personagem que o mais agradou por conta de seus atributos
     
-    <div align="center">
+  <div align="center">
     <img src="https://github.com/GuilhermeSouza852002/LBDI4-Prova/issues/1#issue-1393874821" width="700px" />
     </div>
     

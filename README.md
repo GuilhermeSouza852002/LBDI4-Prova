@@ -65,8 +65,18 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
     Definition of Done: O jogador deve conseguir escolher o personagem que o mais agradou por conta de seus atributos
     
-    
+8-> Título: Como jogador, como saber qual meu nível em relação aos outros jogadores?
+
+    Critério de aceitação: elaborar um sistema de ranking que classifique os jogadores de acordo com sua pontuação feita ao longo do jogo
   
+    Definition of Done: O jogo deve classificar a pontuação que os jogadores fizeram, da maior pontuação até a menor pontuação
+    
+8-> Título: Como sistema, como devo guardar as pontuações dos jogadores?
+
+    Critério de aceitação: Deve ser elaborado um ranking para armazenar a pontuação dos jogadores
+    
+    Definition of Done: O jogo deve conseguir armazenar a puntuação dos jogadores
+    
   
   <h1 align="center">Diagrama MER</h1>
   <div align="center">

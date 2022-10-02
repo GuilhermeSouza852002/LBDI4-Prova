@@ -9,7 +9,7 @@ Atualmente o ensino de história vem se tornando cada vez menos atrativo para gr
 
 -------Objetivo--------------
 
-Desenvolver um jogo que torna o ensino de história mais interativo e atrativo aos alunos, trazendo uma nova perspectiva e dinâmica de se aprender.
+Desenvolver um jogo digital que torna o ensino de história mais atrativo aos alunos, trazendo uma nova perspectiva e dinâmica de se aprender.
 
 -------Descrição--------------
 

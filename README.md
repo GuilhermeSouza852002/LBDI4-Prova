@@ -71,7 +71,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
   
     Definition of Done: O jogo deve classificar a pontuação que os jogadores fizeram, da maior pontuação até a menor pontuação
     
-8-> Título: Como sistema, como devo guardar as pontuações dos jogadores?
+9-> Título: Como sistema, como devo guardar as pontuações dos jogadores?
 
     Critério de aceitação: Deve ser elaborado um ranking para armazenar a pontuação dos jogadores
     

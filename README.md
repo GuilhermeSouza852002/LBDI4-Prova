@@ -70,7 +70,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
     
   <div align="center">
-    <img src="" />
+    <img src="https://github.com/GuilhermeSouza852002/LBDI4-Prova/blob/b4454afc74355765b9e95f35babb4c46be3fefe6/Diagramas/DiagramaClasse.png" width="700px"/>
     </div>
 
   <div align="center">

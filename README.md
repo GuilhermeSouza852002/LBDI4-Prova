@@ -64,3 +64,11 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     Critério de aceitação: Deve ser elaborado personagem para o jogador escolher, cada personagem possui pontos de hp, lv, força, destreza, inventario, habilidades e uma classe  
     
     Definition of Done: O jogador deve conseguir escolher o personagem que o mais agradou por conta de seus atributos
+    
+    <div align="center">
+    <img src="" width="700px" />
+    </div>
+    
+    <div align="center">
+    <img src="" width="700px" />
+    </div>

@@ -58,3 +58,9 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     Critério de aceitação: Deve ser elaborado botões que permitão a movimentação de correr e andar para frente e para trás
     
     Definition of Done: O jogador deve conseguir se movimentar, correr e andar para frente e para trás
+
+7-> Título: Como jogador, como posso escolher o personagem para jogar?
+
+    Critério de aceitação: Deve ser elaborado personagem para o jogador escolher, cada personagem possui pontos de hp, lv, força, destreza, inventario, habilidades e uma classe  
+    
+    Definition of Done: O jogador deve conseguir escolher o personagem que o mais agradou por conta de seus atributos

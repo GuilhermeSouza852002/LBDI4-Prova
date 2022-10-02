@@ -13,7 +13,7 @@ Desenvolver um jogo que torna o ensino de história mais interativo e atrativo a
 
 -------Descrição--------------
 
-O projeto será um jogo didático em formato de um quiz com aspectos de RPG onde jogador terá que acertar as questões para derrotar seus inimigos, o jogo irá abordar questões sobre conhecimentos e curiosidades da disciplina de história.
+O projeto será um jogo didático em formato de RPG onde jogador tera que derrotar inimigos e coletar itens que possuiram conhecimentos e curiosidades da disciplina de história em suas discrições.
 
 
 -------Funcionalidades--------------

@@ -70,7 +70,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
   
   <h1 align="center">Diagrama MER</h1>
   <div align="center">
-    <img src="https://github.com/GuilhermeSouza852002/LBDI4-Prova/blob/b8f568b8d8e50c00c5dc6c6e1dfd0872d9d10860/Diagramas/DiagramaRelacional.png" />
+    <img src="https://github.com/GuilhermeSouza852002/LBDI4-Prova/blob/b8f568b8d8e50c00c5dc6c6e1dfd0872d9d10860/Diagramas/DiagramaRelacional.png" width="700px"/>
     </div> 
     
   <h1 align="center">Diagrama de Classe</h1>

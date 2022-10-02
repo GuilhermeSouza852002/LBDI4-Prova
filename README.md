@@ -34,9 +34,9 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
 
 3-> Título: Como jogador, como me defenderei do ataque do inimigos?
     
-    Critério de aceitação: Deve ser elaborado um botão de defesa que ao jogador clicar seu personagem deve se defender do ataque do inimigo
+    Critério de aceitação: O jogador tem uma chance de se denfender quando o inimigo o ataca
     
-    Definition of Done: O jogador deve conseguir se defender do ataque do inimigo ao clicar no botão de defesa
+    Definition of Done: O jogador deve conseguir se defender do ataque do inimigo
     
     
 4-> Título: Como sistema, como saberei onde armazenar os itens que o jogador coletar

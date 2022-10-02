@@ -18,63 +18,43 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
 
 -------Funcionalidades--------------
 
-1-> Título: Como jogador, como posso acessar o jogo?
+1-> Título: Como jogador, preciso saber onde estou dentro do jogo?
 
-    Critério de aceitação: 
+    Critério de aceitação: Desenvolver um mapa que o jogador possa explorar clicando nas áreas já definidas como ponto de exploração.
     
-    Given: Jogador
-    When: Acessar o jogo
-    Then: Para jogar
+    Definition of Done: O mapa deve possibilitar que ao jogador clicar em uma área já pre-definida ele possa explora-la
     
-    Definition of Done: Ao abrir o jogo será exibido o título do jogo e para iniciar o jogador deverá apertar "Enter"
-
-2-> Título: Como jogador, preciso saber onde estou dentro do jogo?
-
-    Critério de aceitação:
+2-> Título: Como jogador, como darei ataques em inimigos?
     
-    Given: Jogador
-    When: Interagir com o mapa
-    Then: Se mapear dentro do jogo
+    Critério de aceitação: Deve ser elaborado um botão de ataque que ao jogador clicar nele o personagem deve atacar o inimigo se estiver no turno do jogador
     
-    Definition of Done: Desenvolver um mapa que o jogador possa explorar clicando nas áreas já definidas como ponto de exploração.
-    
-3-> Título: Como jogador, como darei um ataque fraco em meus inimigos?
-    
-    Critério de aceitação:
-    
-    Given: Jogador
-    When: 
-    Then:  
-    
-    Definition of Done: O jogo possuirá um sistema de questões baseado em um combate de RPG onde o jogador pode optar por questões fáceis escolhendo dar um ataque fraco no inimigo
+    Definition of Done: O jogador deve conseguir atacar seu inimigo ao apertar o botão de ataque
 
 
-4-> Título: Como jogador, como darei um ataque forte em meus inimigos?
+3-> Título: Como jogador, como me defenderei do ataque do inimigos?
     
-    Critério de aceitação:
+    Critério de aceitação: Deve ser elaborado um botão de defesa que ao jogador clicar seu personagem deve se defender do ataque do inimigo
     
-    Given: Jogador
-    When: 
-    Then: 
+    Definition of Done: O jogador deve conseguir se defender do ataque do inimigo ao clicar no botão de defesa
     
-    Definition of Done: O jogo possuirá um sistema de questões baseado em um combate de RPG onde o jogador pode optar por questões difíceis escolhendo dar um ataque forte no inimigo
+    
+4-> Título: Como sistema, como saberei onde armazenar os itens que o jogador coletar
+    
+    Critério de aceitação: Deve ser elaborado um inventario para armazenar os itens que o jogador coletou 
+    
+    Definition of Done: O sistema deve conseguir armazenar os itens que o jogador coletar
+    
     
 5-> Título: Como jogador, como saberei que itens tenho no inventario
     
-    Critério de aceitação:
+    Critério de aceitação: Deve ser elaborado um botão de inventario para visualizar os itens que o jogador coletou 
     
-    Given: Jogador
-    When: Aessar o inventario
-    Then: Ver os itens que possui
+    Definition of Done: O jogador deve conseguir ver o inventario ao apertar no botão do inventario
     
-    Definition of Done:
+    
     
 6-> Título: Como jogador, como posso me movimentar no jogo?
     
-    Critério de aceitação:
+    Critério de aceitação: Deve ser elaborado botões que permitão a movimentação de correr e andar para frente e para trás
     
-    Given: Jogador
-    When: Se movimentar
-    Then: Para se locomover
-    
-    Definition of Done:
+    Definition of Done: O jogador deve conseguir se movimentar, correr e andar para frente e para trás

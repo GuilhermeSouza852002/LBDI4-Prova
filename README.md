@@ -111,7 +111,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
   <h1 align="center">Diagrama MER</h1>
   <div align="center">
-    <img src="Diagramas/DiagramaRelacional.pg" width="700px"/>
+    <img src="Diagramas/DiagramaRelacional.png" width="700px"/>
     </div> 
     
   <h1 align="center">Diagrama de Classe</h1>

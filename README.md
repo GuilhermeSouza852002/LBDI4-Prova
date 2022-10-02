@@ -53,50 +53,56 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     Definition of Done: O jogador deve conseguir ver o inventario ao apertar no botão do inventario
     
     
+6-> Título: Como jogador, como aprenderei história ao jogar?
+
+    Critério de aceitação: Os conhecimento e curiosidades deve ser introduzidas nas descrições dos itens
     
-6-> Título: Como jogador, como posso me movimentar no jogo?
+    Definition of Done: Os itens deve possuir em suas descrições alguns conhecimentos e curiosidades da disciplina de história
+    
+    
+7-> Título: Como jogador, como posso me movimentar no jogo?
     
     Critério de aceitação: Deve ser elaborado botões que permitão a movimentação de correr e andar para frente e para trás
     
     Definition of Done: O jogador deve conseguir se movimentar, correr e andar para frente e para trás
     
 
-7-> Título: Como jogador, como posso escolher o personagem para jogar?
+8-> Título: Como jogador, como posso escolher o personagem para jogar?
 
     Critério de aceitação: Deve ser elaborado personagem para o jogador escolher, cada personagem possui pontos de hp, lv, força, destreza, inventario, habilidades e uma classe  
     
     Definition of Done: O jogador deve conseguir escolher o personagem que o mais agradou por conta de seus atributos
     
     
-8-> Título: Como jogador, como saber qual meu nível em relação aos outros jogadores?
+9-> Título: Como jogador, como saber qual meu nível em relação aos outros jogadores?
 
     Critério de aceitação: elaborar um sistema de ranking que classifique os jogadores de acordo com sua pontuação feita ao longo do jogo
   
     Definition of Done: O jogo deve classificar a pontuação que os jogadores fizeram, da maior pontuação até a menor pontuação
     
     
-9-> Título: Como sistema, como devo guardar as pontuações dos jogadores?
+10-> Título: Como sistema, como devo guardar as pontuações dos jogadores?
 
     Critério de aceitação: Deve ser elaborado um ranking para armazenar a pontuação dos jogadores
     
     Definition of Done: O jogo deve conseguir armazenar a puntuação dos jogadores
     
     
-10-> Título: Como sistema, como devo criar os inimigos que o jogador enfrentara?
+11-> Título: Como sistema, como devo criar os inimigos que o jogador enfrentara?
   
     Critério de aceitação: Deve ser criado inimigos que possuam um nome, hp, habilidades e a experiencia que dão ao serem derrotados
     
     Definition of Done: O jogo deve conseguir criar inimigos com nome, hp, habilidades e a experiencia que dão ao serem derrotados
     
     
-11-> Título: Como inimigo, como darei ataques no jogador?
+12-> Título: Como inimigo, como darei ataques no jogador?
     
     Critério de aceitação: Quando chegar a vez do inimigo ele pode optar por fazer um ataque no jogador
     
     Definition of Done: O inimigo deve conseguir desferir um ataque no jogador quando chegar a sua vez de agir
 
 
-12-> Título: Como inimigo, como me defenderei do ataque do jogador?
+13-> Título: Como inimigo, como me defenderei do ataque do jogador?
     
     Critério de aceitação: O inimigo tem uma chance de se denfender quando o jogador o ataca
     

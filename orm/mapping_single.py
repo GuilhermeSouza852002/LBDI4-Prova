@@ -1,16 +1,19 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
-from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey   #importando membros especificos da biblioteca sqlalchemy
+from sqlalchemy.orm import declarative_base, sessionmaker   #importando membros especificos da biblioteca sqlalchemy.orm
 
-URL = "mysql+mysqlconnector://root:123456@localhost:3306/ORM"
+URL = "mysql+mysqlconnector://root:123456@localhost:3306/ORM"       #faz a conexão com o banco mysql:// senha e usuario : porta/nome do banco
 
-Base = declarative_base()
+# $ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+# mysql> CREATE DATABASE ORM;
+# mysql> USE ORM;
+# mysql> SHOW TABLES;
 
+Base = declarative_base()   #construção de uma classe base para definir classes declarativas
 
 class Jogador(Base):
     __tablename__ = "Jogador"
     id_jogador = Column(Integer, primary_key=True)
     nome = Column(String(150), nullable=False)
-
 
 class Personagem(Base):
     __tablename__ = "Personagem"
@@ -20,7 +23,6 @@ class Personagem(Base):
     forca = Column(Integer, nullable=False)
     destreza = Column(Integer, nullable=False)
     classe = Column(String(60), nullable=False)
-
 
 class Habilidade(Base):
     __tablename__ = "Habilidade"
@@ -32,7 +34,6 @@ class Inventario(Base):
     __tablename__ = "Inventario"
     id_inventario = Column(Integer, primary_key=True)
     tipo = Column(String(60), nullable=False)
-
 
 class Item(Base):
     __tablename__ = "Item"
@@ -85,14 +86,14 @@ class Ranking(Base):
     pontuacao = Column(Integer, nullable=False)
 
 def main():
-    engine = create_engine(url=URL)
+    engine = create_engine(url=URL) #cria a conexão com o banco de dados
 
-    Base.metadata.create_all(bind=engine)
-
+    Base.metadata.create_all(bind=engine)   #metadados é uma biblioteca que fornece acesso aos metadados do pacote instalado.
+                                            #create_all() para criar as tabelas associadas aos seus modelos
 
     Session = sessionmaker(engine, expire_on_commit=False)
 
-    with Session.begin() as session:
+    with Session.begin() as session:        #inicia sessão, criação das tabelas
         jogador = Jogador(nome="Gwyn Lord of Cinder")
         id_jogador = jogador.id_jogador
         session.add(jogador)

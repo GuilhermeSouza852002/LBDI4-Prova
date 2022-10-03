@@ -12,6 +12,7 @@ class Jogador(Base):
     nome = Column(String(150), nullable=False)
     personagem_id = Column(Integer, ForeignKey("Personagem.id"), nullable=False)
     pontuacao_id = Column(Integer, ForeignKey("Ranking.id"), nullable=False)
+
 class Personagem(Base):
     __tablename__ = "Personagem"
     id_personagem = Column(Integer, primary_key=True)
@@ -28,6 +29,7 @@ class Habilidade(Base):
     id_habilidade = Column(Integer, primary_key=True)
     nomehabilidade = Column(String(60), nullable=False)
     tipo = Column(String(60), nullable=False)
+
 class Inventario(Base):
     __tablename__ = "Inventario"
     id_inventario = Column(Integer, primary_key=True)
@@ -66,6 +68,7 @@ class Mapa(Base):
     cenario_id = Column(Integer, ForeignKey("Cenario.id"), nullable=False)
     clima_id = Column(Integer, ForeignKey("Clima.id"), nullable=False)
     inimigo_id = Column(Integer, ForeignKey("Inimigo.id"), nullable=False)
+
 class Cenario(Base):
     __tablename__ = "Cenario"
     id_cenario = Column(Integer, primary_key=True)

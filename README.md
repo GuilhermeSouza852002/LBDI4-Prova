@@ -13,7 +13,7 @@ Desenvolver um jogo digital que torna o ensino de história mais atrativo aos al
 
 -------Descrição--------------
 
-O projeto será um jogo didático em formato de RPG onde jogador tera que derrotar inimigos e coletar itens que possuiram conhecimentos e curiosidades da disciplina de história em suas discrições.
+O projeto será um jogo didático em formato de RPG onde jogador tera que derrotar inimigos e coletar itens que possuiram conhecimentos e curiosidades da disciplina de história em suas descrições.
 
 
 -------Funcionalidades--------------
@@ -29,7 +29,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
     Critério de aceitação: Deve ser elaborado um botão de ataque que ao jogador clicar nele o personagem deve atacar o inimigo se estiver no turno do jogador
     
-    Definition of Done: O jogador deve conseguir atacar seu inimigo ao apertar o botão de ataque
+    Definition of Done: O jogador em seu turno deve conseguir atacar seu inimigo ao apertar o botão de ataque
 
 
 3-> Título: Como jogador, como me defenderei do ataque do inimigos?
@@ -69,7 +69,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
 
 8-> Título: Como jogador, como posso escolher o personagem para jogar?
 
-    Critério de aceitação: Deve ser elaborado personagem para o jogador escolher, cada personagem possui pontos de hp, lv, força, destreza, inventario, habilidades e uma classe  
+    Critério de aceitação: Deve ser elaborado personagens para o jogador escolher, cada personagem possui pontos de hp, lv, força, destreza, inventario, habilidades e uma classe  
     
     Definition of Done: O jogador deve conseguir escolher o personagem que o mais agradou por conta de seus atributos
     
@@ -97,7 +97,7 @@ O projeto será um jogo didático em formato de RPG onde jogador tera que derrot
     
 12-> Título: Como inimigo, como darei ataques no jogador?
     
-    Critério de aceitação: Quando chegar a vez do inimigo ele pode optar por fazer um ataque no jogador
+    Critério de aceitação: Quando chegar a vez do inimigo ele pode atacar o jogador
     
     Definition of Done: O inimigo deve conseguir desferir um ataque no jogador quando chegar a sua vez de agir
 

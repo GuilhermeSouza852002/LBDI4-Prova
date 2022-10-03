@@ -10,7 +10,7 @@ URL = "mysql+mysqlconnector://root:123456@localhost:3306/ORM"       #faz a conex
 
 Base = declarative_base()   #construção de uma classe base para definir classes declarativas
 
-#criação das classes e seus atributos
+#Criação das classes e seus atributos
 class Jogador(Base):
     __tablename__ = "Jogador"
     id_jogador = Column(Integer, primary_key=True)

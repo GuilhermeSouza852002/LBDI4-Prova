@@ -10,8 +10,8 @@ class Jogador(Base):
     __tablename__ = "Jogador"
     id_jogador = Column(Integer, primary_key=True)
     nome = Column(String(150), nullable=False)
-
-
+    personagem_id = Column(Integer, ForeignKey("Personagem.id"), nullable=False)
+    pontuacao_id = Column(Integer, ForeignKey("Ranking.id"), nullable=False)
 class Personagem(Base):
     __tablename__ = "Personagem"
     id_personagem = Column(Integer, primary_key=True)
@@ -20,19 +20,19 @@ class Personagem(Base):
     forca = Column(Integer, nullable=False)
     destreza = Column(Integer, nullable=False)
     classe = Column(String(60), nullable=False)
-
+    inventario_id = Column(Integer, ForeignKey("Inventario.id"), nullable=False)
+    habilidade_id = Column(Integer, ForeignKey("Habilidade.id"), nullable=False)
 
 class Habilidade(Base):
     __tablename__ = "Habilidade"
     id_habilidade = Column(Integer, primary_key=True)
     nomehabilidade = Column(String(60), nullable=False)
     tipo = Column(String(60), nullable=False)
-
 class Inventario(Base):
     __tablename__ = "Inventario"
     id_inventario = Column(Integer, primary_key=True)
     tipo = Column(String(60), nullable=False)
-
+    item_id = Column(Integer, ForeignKey("Item.id"), nullable=False)
 
 class Item(Base):
     __tablename__ = "Item"
@@ -41,6 +41,8 @@ class Item(Base):
     raridade = Column(Integer, nullable=False)
     requer_forca = Column(Integer, nullable=False)
     requer_destreza = Column(Integer, nullable=False)
+    arma_id = Column(Integer, ForeignKey("Arma.id"), nullable=False)
+    armadura_id = Column(Integer, ForeignKey("Armadura.id"), nullable=False)
     descricao = Column(String(200), nullable=False)
 
 class Arma(Base):
@@ -61,7 +63,9 @@ class Mapa(Base):
     __tablename__ = "Mapa"
     id_mapa = Column(Integer, primary_key=True)
     nome_mapa = Column(String(60), nullable=False)
-
+    cenario_id = Column(Integer, ForeignKey("Cenario.id"), nullable=False)
+    clima_id = Column(Integer, ForeignKey("Clima.id"), nullable=False)
+    inimigo_id = Column(Integer, ForeignKey("Inimigo.id"), nullable=False)
 class Cenario(Base):
     __tablename__ = "Cenario"
     id_cenario = Column(Integer, primary_key=True)
@@ -78,12 +82,12 @@ class Inimigo(Base):
     nome_inimigo = Column(String(150), nullable=False)
     hp = Column(Integer, nullable=False)
     experiencia = Column(Integer, nullable=False)
+    habilidade_id = Column(Integer, ForeignKey("Habilidade.id"), nullable=False)
 
 class Ranking(Base):
     __tablename__ = "Ranking"
     id_ranking = Column(Integer, primary_key=True)
     pontuacao = Column(Integer, nullable=False)
-
 def main():
     engine = create_engine(url=URL)
 
@@ -93,64 +97,15 @@ def main():
     Session = sessionmaker(engine, expire_on_commit=False)
 
     with Session.begin() as session:
-        jogador = Jogador(nome="Gwyn Lord of Cinder")
+        jogador = Jogador(nome="Gwyn")
         id_jogador = jogador.id_jogador
         session.add(jogador)
 
     with Session.begin() as session:
-        personagem = Personagem(hp=100, level=1, forca=10, destreza=11, classe='paladino')
-        id_personagem = personagem.id_personagem
-        session.add(personagem)
+        jogador.nome = "Gwyn, Lord of Cinder"
+        id_jogador = jogador.id_jogador
+        session.add(jogador)
 
-    with Session.begin() as session:
-        habilidade = Habilidade(nome='Raio de luz solar', tipo='Milagre')
-        id_habilidade = habilidade.id_habilidade
-        session.add(habilidade)
-
-    with Session.begin() as session:
-        inventario = Inventario(tipo='Utilidade')
-        id_inventario = inventario.id_inventario
-        session.add(inventario)
-
-    with Session.begin() as session:
-        item = Item(efeito='Fogo', raridade=3, requer_forca=10, requer_destrza=11, descricao='espada de fogo')
-        id_item = item.id_item
-        session.add(item)
-
-    with Session.begin() as session:
-        arma = Arma(nome_arma='Espada de Gwyn', alcance=5, dano=20)
-        id_arma = arma.id_arma
-        session.add(arma)
-
-    with Session.begin() as session:
-        armadura = Armadura(nome_armadura='Traje real', tipo='Pesado', defesa=15)
-        id_armadura = armadura.id_armadura
-        session.add(armadura)
-
-    with Session.begin() as session:
-        mapa = Mapa(nome_mapa='Anor Londo')
-        id_mapa = mapa.id_mapa
-        session.add(mapa)
-
-    with Session.begin() as session:
-        cenario = Cenario(descricao='Um lugar belo e iluminado')
-        id_cenario = cenario.id_cenario
-        session.add(cenario)
-
-    with Session.begin() as session:
-        clima = Clima(descricao='Ensolarado')
-        id_clima = clima.id_clima
-        session.add(clima)
-
-    with Session.begin() as session:
-        inimigo = Inimigo(nome_inimigo='Kalameet', hp=250, experiencia=3500)
-        id_inimigo = inimigo.id_inimigo
-        session.add(inimigo)
-
-    with Session.begin() as session:
-        ranking = Ranking(pontuacao=2000)
-        id_ranking = ranking.id_ranking
-        session.add(ranking)
 
 
 if __name__ == "__main__":

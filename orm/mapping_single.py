@@ -1,20 +1,23 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey   #importando membros especificos da biblioteca sqlalchemy
-from sqlalchemy.orm import declarative_base, sessionmaker   #importando membros especificos da biblioteca sqlalchemy.orm
+from sqlalchemy import create_engine, Column, Integer, String, \
+    ForeignKey  # importando membros especificos da biblioteca sqlalchemy
+from sqlalchemy.orm import declarative_base, sessionmaker  # importando membros especificos da biblioteca sqlalchemy.orm
 
-URL = "mysql+mysqlconnector://root:123456@localhost:3306/ORM"       #faz a conexão com o banco mysql:// senha e usuario : porta/nome do banco
+URL = "mysql+mysqlconnector://root:123456@localhost:3306/ORM"  # faz a conexão com o banco mysql:// senha e usuario : porta/nome do banco
 
 # $ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 # mysql> CREATE DATABASE ORM;
 # mysql> USE ORM;
 # mysql> SHOW TABLES;
 
-Base = declarative_base()   #construção de uma classe base para definir classes declarativas
+Base = declarative_base()  # construção de uma classe base para definir classes declarativas
 
-#Criação das classes e seus atributos
+
+# Criação das classes e seus atributos
 class Jogador(Base):
     __tablename__ = "Jogador"
     id_jogador = Column(Integer, primary_key=True)
     nome = Column(String(60), nullable=False)
+
 
 class Personagem(Base):
     __tablename__ = "Personagem"
@@ -25,16 +28,19 @@ class Personagem(Base):
     destreza = Column(Integer, nullable=False)
     classe = Column(String(60), nullable=False)
 
+
 class Habilidade(Base):
     __tablename__ = "Habilidade"
     id_habilidade = Column(Integer, primary_key=True)
     nomehabilidade = Column(String(60), nullable=False)
     tipo = Column(String(60), nullable=False)
 
+
 class Inventario(Base):
     __tablename__ = "Inventario"
     id_inventario = Column(Integer, primary_key=True)
     tipo = Column(String(60), nullable=False)
+
 
 class Item(Base):
     __tablename__ = "Item"
@@ -45,12 +51,14 @@ class Item(Base):
     requer_destreza = Column(Integer, nullable=False)
     descricao = Column(String(60), nullable=False)
 
+
 class Arma(Base):
     __tablename__ = "Arma"
     id_arma = Column(Integer, primary_key=True)
     nome_arma = Column(String(60), nullable=False)
     alcance = Column(Integer, nullable=False)
     dano = Column(Integer, nullable=False)
+
 
 class Armadura(Base):
     __tablename__ = "Armadura"
@@ -59,20 +67,24 @@ class Armadura(Base):
     tipo = Column(String(60), nullable=False)
     defesa = Column(Integer, nullable=False)
 
+
 class Mapa(Base):
     __tablename__ = "Mapa"
     id_mapa = Column(Integer, primary_key=True)
     nome_mapa = Column(String(60), nullable=False)
+
 
 class Cenario(Base):
     __tablename__ = "Cenario"
     id_cenario = Column(Integer, primary_key=True)
     descricao = Column(String(60), nullable=False)
 
+
 class Clima(Base):
     __tablename__ = "Clima"
     id_clima = Column(Integer, primary_key=True)
     descricao = Column(String(60), nullable=False)
+
 
 class Inimigo(Base):
     __tablename__ = "Inimigo"
@@ -81,31 +93,34 @@ class Inimigo(Base):
     hp = Column(Integer, nullable=False)
     experiencia = Column(Integer, nullable=False)
 
+
 class Ranking(Base):
     __tablename__ = "Ranking"
     id_ranking = Column(Integer, primary_key=True)
     pontuacao = Column(Integer, nullable=False)
 
-def main():
-    engine = create_engine(url=URL) #cria a conexão com o banco de dados
 
-    Base.metadata.create_all(bind=engine)   #metadados é uma biblioteca que fornece acesso aos metadados do pacote instalado.
-                                            #create_all() para criar as tabelas associadas aos seus modelos
+def main():
+    engine = create_engine(url=URL)  # cria a conexão com o banco de dados
+
+    Base.metadata.create_all(
+        bind=engine)  # metadados é uma biblioteca que fornece acesso aos metadados do pacote instalado.
+    # create_all() para criar as tabelas associadas aos seus modelos
 
     Session = sessionmaker(engine, expire_on_commit=False)
 
-    with Session.begin() as session:        #inicia sessão, criação das tabelas
+    with Session.begin() as session:  # inicia sessão, criação das tabelas
         jogador = Jogador(nome="Gwyn Lord of Cinder")
         id_jogador = jogador.id_jogador
         session.add(jogador)
 
     with Session.begin() as session:
-        personagem = Personagem(hp=100, level=1, forca=10, destreza=11, classe="paladino")
+        personagem = Personagem(hp=100, lv=1, forca=10, destreza=11, classe="paladino")
         id_personagem = personagem.id_personagem
         session.add(personagem)
 
     with Session.begin() as session:
-        habilidade = Habilidade(nome="Raio de luz solar", tipo="Milagre")
+        habilidade = Habilidade(nomehabilidade="Raio de luz solar", tipo="Milagre")
         id_habilidade = habilidade.id_habilidade
         session.add(habilidade)
 
@@ -115,7 +130,7 @@ def main():
         session.add(inventario)
 
     with Session.begin() as session:
-        item = Item(efeito="Fogo", raridade=3, requer_forca=10, requer_destrza=11, descricao="espada de fogo")
+        item = Item(efeito="Fogo", raridade=3, requer_forca=10, requer_destreza=11, descricao="espada de fogo")
         id_item = item.id_item
         session.add(item)
 
